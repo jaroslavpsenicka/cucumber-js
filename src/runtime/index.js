@@ -50,6 +50,7 @@ export default class Runtime {
       supportCodeLibrary: this.supportCodeLibrary,
       testCase,
       worldParameters: this.options.worldParameters,
+      neverSkip: this.options.neverSkip,
     })
     const testCaseResult = await testCaseRunner.run()
     if (testCaseResult.duration) {

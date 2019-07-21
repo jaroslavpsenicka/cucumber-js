@@ -12,6 +12,7 @@ export default class TestCaseRunner {
     testCase,
     supportCodeLibrary,
     worldParameters,
+    neverSkip,
   }) {
     const attachmentManager = new AttachmentManager(({ data, media }) => {
       if (this.testStepIndex > this.maxTestStepIndex) {
@@ -25,6 +26,7 @@ export default class TestCaseRunner {
         media,
       })
     })
+    this.neverSkip = neverSkip
     this.eventBroadcaster = eventBroadcaster
     this.skip = skip
     this.testCase = testCase
@@ -118,7 +120,7 @@ export default class TestCaseRunner {
   }
 
   isSkippingSteps() {
-    return this.result.status !== Status.PASSED
+    return this.neverSkip ? false : this.result.status !== Status.PASSED
   }
 
   shouldSkipHook(isBeforeHook) {

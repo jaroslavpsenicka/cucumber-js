@@ -14,7 +14,7 @@ const slaveCommand = path.resolve(
 )
 
 export default class Master {
-  // options - {dryRun, failFast, filterStacktraces, strict}
+  // options - {dryRun, failFast, neverSkip, filterStacktraces, strict}
   constructor({
     eventBroadcaster,
     options,

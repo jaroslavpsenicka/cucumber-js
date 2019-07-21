@@ -41,6 +41,7 @@ describe('Configuration', () => {
         runtimeOptions: {
           dryRun: false,
           failFast: false,
+          neverSkip: false,
           filterStacktraces: true,
           strict: true,
           worldParameters: {},

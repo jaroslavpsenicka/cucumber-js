@@ -57,6 +57,7 @@ export default class ConfigurationBuilder {
       runtimeOptions: {
         dryRun: !!this.options.dryRun,
         failFast: !!this.options.failFast,
+        neverSkip: !!this.options.neverSkip,
         filterStacktraces: !this.options.backtrace,
         strict: !!this.options.strict,
         worldParameters: this.options.worldParameters,

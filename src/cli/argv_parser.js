@@ -51,6 +51,7 @@ export default class ArgvParser {
         'force shutdown of the event loop when the test run has finished: cucumber will call process.exit'
       )
       .option('--fail-fast', 'abort the run on first failure')
+      .option('--never-skip', 'completes the test even with failing steps')
       .option(
         '-f, --format <TYPE[:PATH]>',
         'specify the output format, optionally supply PATH to redirect formatter output (repeatable)',
