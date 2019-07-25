@@ -1,0 +1,185 @@
+┌────────────────────────────────────────────────────────────────────────────────────┬──────────┬───────────────────────────────────────────────────────┐
+│ Pattern / Text                                                                     │ Duration │ Location                                              │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^I run cucumber-js \(installed (locally|globally)\)$/                             │ 1553.5ms │ features/step_definitions/cli_steps.js:17             │
+│   I run cucumber-js (installed locally)                                            │ 2410ms   │ features/global_install.feature:26                    │
+│   I run cucumber-js (installed globally)                                           │ 697ms    │ features/global_install.feature:17                    │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^I run cucumber-js(?: with `(|.+)`)?$/                                            │ 302.29ms │ features/step_definitions/cli_steps.js:9              │
+│   I run cucumber-js                                                                │ 3430ms   │ features/exit.feature:28                              │
+│   I run cucumber-js                                                                │ 3093ms   │ features/before_after_all_hook_interfaces.feature:221 │
+│   I run cucumber-js                                                                │ 2749ms   │ features/before_after_all_hook_interfaces.feature:221 │
+│   I run cucumber-js                                                                │ 2748ms   │ features/before_after_all_hook_interfaces.feature:108 │
+│   I run cucumber-js                                                                │ 2534ms   │ features/before_after_all_hook_interfaces.feature:108 │
+│   207 more                                                                         │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ it outputs the usage data:                                                         │ 4ms      │ features/step_definitions/usage_json_steps.js:8       │
+│   it outputs the usage data:                                                       │ 4ms      │ features/usage_json_formatter.feature:28              │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^a file named "(.*)" with:$/                                                      │ 3.17ms   │ features/step_definitions/file_steps.js:12            │
+│   a file named "features/a.feature" with:                                          │ 105ms    │ features/order.feature:4                              │
+│   a file named "features/skipped.feature" with:                                    │ 101ms    │ features/skipped_steps.feature:10                     │
+│   a file named "features/my_feature.feature" with:                                 │ 98ms     │ features/hook_interface.feature:4                     │
+│   a file named "features/step_definitions/cucumber_steps.js" with:                 │ 97ms     │ features/step_definition_timeouts.feature:4           │
+│   a file named "features/my_feature.feature" with:                                 │ 94ms     │ features/hook_parameter.feature:37                    │
+│   474 more                                                                         │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^an empty file named "(.*)"$/                                                     │ 3ms      │ features/step_definitions/file_steps.js:20            │
+│   an empty file named "@rerun.txt"                                                 │ 3ms      │ features/rerun_formatter.feature:99                   │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the file "([^"]*)" has the text:$/                                               │ 1.71ms   │ features/step_definitions/file_steps.js:35            │
+│   the file "summary.txt" has the text:                                             │ 3ms      │ features/multiple_formatters.feature:27               │
+│   the file "test_results/@rerun.txt" has the text:                                 │ 3ms      │ features/rerun_formatter_subfolder.feature:27         │
+│   the file "@rerun.txt" has the text:                                              │ 2ms      │ features/rerun_formatter.feature:115                  │
+│   the file "@rerun.txt" has the text:                                              │ 1ms      │ features/rerun_formatter.feature:50                   │
+│   the file "@rerun.txt" has the text:                                              │ 1ms      │ features/rerun_formatter.feature:66                   │
+│   2 more                                                                           │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ the {string} hook has the attachment                                               │ 1.6ms    │ features/step_definitions/json_output_steps.js:93     │
+│   the "Before" hook has the attachment                                             │ 4ms      │ features/attachments.feature:27                       │
+│   the "After" hook has the attachment                                              │ 1ms      │ features/attachments.feature:94                       │
+│   the "Before" hook has the attachment                                             │ 1ms      │ features/attachments.feature:46                       │
+│   the "Before" hook has the attachment                                             │ 1ms      │ features/attachments.feature:66                       │
+│   the "Before" hook has the attachment                                             │ 1ms      │ features/attachments.feature:80                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the (first|second) scenario has the step "([^"]*)" with the table$/              │ 1.5ms    │ features/step_definitions/json_output_steps.js:131    │
+│   the first scenario has the step "a table step" with the table                    │ 2ms      │ features/scenario_outlines.feature:68                 │
+│   the second scenario has the step "a table step" with the table                   │ 1ms      │ features/scenario_outlines.feature:70                 │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ the output matches the fixture {string}                                            │ 1.25ms   │ features/step_definitions/fixture_steps.js:9          │
+│   the output matches the fixture "event_protocol_formatter/gherkin-error.ndjson"   │ 2ms      │ features/event_protocol_formatter.feature:13          │
+│   the output matches the fixture "event_protocol_formatter/failed.ndjson"          │ 1ms      │ features/event_protocol_formatter.feature:56          │
+│   the output matches the fixture "event_protocol_formatter/passed.ndjson"          │ 1ms      │ features/event_protocol_formatter.feature:40          │
+│   the output matches the fixture "event_protocol_formatter/rejected-pickle.ndjson" │ 1ms      │ features/event_protocol_formatter.feature:24          │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ the output does not contain the text:                                              │ 1ms      │ features/step_definitions/cli_steps.js:48             │
+│   the output does not contain the text:                                            │ 1ms      │ features/exit.feature:36                              │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the error output contains the text snippets:$/                                   │ 1ms      │ features/step_definitions/cli_steps.js:54             │
+│   the error output contains the text snippets:                                     │ 1ms      │ features/before_after_all_hook_timeouts.feature:30    │
+│   the error output contains the text snippets:                                     │ 1ms      │ features/before_after_all_hook_timeouts.feature:30    │
+│   the error output contains the text snippets:                                     │ 1ms      │ features/before_after_all_hooks.feature:59            │
+│   the error output contains the text snippets:                                     │ 1ms      │ features/before_after_all_hooks.feature:75            │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^I see the version of Cucumber$/                                                  │ 1ms      │ features/step_definitions/cli_steps.js:68             │
+│   I see the version of Cucumber                                                    │ 1ms      │ features/cli.feature:39                               │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^I see the help text for Cucumber$/                                               │ 1ms      │ features/step_definitions/cli_steps.js:75             │
+│   I see the help text for Cucumber                                                 │ 1ms      │ features/cli.feature:44                               │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^a directory named "(.*)"$/                                                       │ 1ms      │ features/step_definitions/file_steps.js:25            │
+│   a directory named "features/nested"                                              │ 1ms      │ features/nested_features.feature:7                    │
+│   a directory named "test_results"                                                 │ 1ms      │ features/rerun_formatter_subfolder.feature:24         │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^"([^"]*)" is an absolute path$/                                                  │ 1ms      │ features/step_definitions/file_steps.js:30            │
+│   "{{{tmpDir}}}" is an absolute path                                               │ 1ms      │ features/formatter_paths.feature:27                   │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^it runs the scenarios "([^"]*)" and "([^"]*)"$/                                  │ 1ms      │ features/step_definitions/json_output_steps.js:22     │
+│   it runs the scenarios "other topic 1" and "other topic 2"                        │ 1ms      │ features/target_specific_scenarios_by_name.feature:28 │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^all steps have status "([^"]*)"$/                                                │ 1ms      │ features/step_definitions/json_output_steps.js:54     │
+│   all steps have status "skipped"                                                  │ 1ms      │ features/dryrun_mode.feature:21                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the "([^"]*)" hook has status "([^"]*)"$/                                        │ 1ms      │ features/step_definitions/json_output_steps.js:72     │
+│   the "After" hook has status "passed"                                             │ 1ms      │ features/hooks.feature:64                             │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ the step {string} has the attachment                                               │ 1ms      │ features/step_definitions/json_output_steps.js:80     │
+│   the step "a step" has the attachment                                             │ 1ms      │ features/attachments.feature:108                      │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the error output contains the text:$/                                            │ 0.76ms   │ features/step_definitions/cli_steps.js:62             │
+│   the error output contains the text:                                              │ 3ms      │ features/generator_step_definitions.feature:36        │
+│   the error output contains the text:                                              │ 1ms      │ features/before_after_all_hook_interfaces.feature:86  │
+│   the error output contains the text:                                              │ 1ms      │ features/before_after_all_hook_interfaces.feature:110 │
+│   the error output contains the text:                                              │ 1ms      │ features/before_after_all_hook_interfaces.feature:110 │
+│   the error output contains the text:                                              │ 1ms      │ features/before_after_all_hook_interfaces.feature:132 │
+│   16 more                                                                          │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the output contains the text:$/                                                  │ 0.62ms   │ features/step_definitions/cli_steps.js:42             │
+│   the output contains the text:                                                    │ 1ms      │ features/direct_imports.feature:43                    │
+│   the output contains the text:                                                    │ 1ms      │ features/error_formatting.feature:98                  │
+│   the output contains the text:                                                    │ 1ms      │ features/exit.feature:29                              │
+│   the output contains the text:                                                    │ 1ms      │ features/hook_interface.feature:140                   │
+│   the output contains the text:                                                    │ 1ms      │ features/hook_interface.feature:182                   │
+│   40 more                                                                          │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^it outputs the text:$/                                                           │ 0.53ms   │ features/step_definitions/cli_steps.js:36             │
+│   it outputs the text:                                                             │ 1ms      │ features/ambiguous_step.feature:18                    │
+│   it outputs the text:                                                             │ 1ms      │ features/custom_formatter.feature:53                  │
+│   it outputs the text:                                                             │ 1ms      │ features/i18n.feature:25                              │
+│   it outputs the text:                                                             │ 1ms      │ features/profiles.feature:41                          │
+│   it outputs the text:                                                             │ 1ms      │ features/profiles.feature:41                          │
+│   10 more                                                                          │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^it runs the scenarios:$/                                                         │ 0.5ms    │ features/step_definitions/json_output_steps.js:27     │
+│   it runs the scenarios:                                                           │ 1ms      │ features/rerun_formatter.feature:82                   │
+│   it runs the scenarios:                                                           │ 1ms      │ features/rerun_formatter.feature:102                  │
+│   it runs the scenarios:                                                           │ 1ms      │ features/target_specific_scenarios_by_line.feature:43 │
+│   it runs the scenarios:                                                           │ 1ms      │ features/target_specific_scenarios_by_tag.feature:49  │
+│   it runs the scenarios:                                                           │ 1ms      │ features/target_specific_scenarios_by_tag.feature:56  │
+│   5 more                                                                           │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the scenario "([^"]*)" has the steps$/                                           │ 0.5ms    │ features/step_definitions/json_output_steps.js:33     │
+│   the scenario "a scenario" has the steps                                          │ 1ms      │ features/background.feature:21                        │
+│   the scenario "another scenario" has the steps                                    │ 1ms      │ features/background.feature:45                        │
+│   the scenario "a scenario" has the steps                                          │ 0ms      │ features/background.feature:41                        │
+│   the scenario "some scenario" has the steps                                       │ 0ms      │ features/hooks.feature:26                             │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the (first|second) scenario has the steps$/                                      │ 0.5ms    │ features/step_definitions/json_output_steps.js:106    │
+│   the first scenario has the steps                                                 │ 1ms      │ features/scenario_outlines.feature:18                 │
+│   the second scenario has the steps                                                │ 0ms      │ features/scenario_outlines.feature:21                 │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the (first|second) scenario has the name "([^"]*)"$/                             │ 0.5ms    │ features/step_definitions/json_output_steps.js:147    │
+│   the first scenario has the name "a passing scenario"                             │ 1ms      │ features/scenario_outlines.feature:88                 │
+│   the second scenario has the name "a failing scenario"                            │ 0ms      │ features/scenario_outlines.feature:89                 │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the step "([^"]*)" has status "([^"]*)"$/                                        │ 0.48ms   │ features/step_definitions/json_output_steps.js:64     │
+│   the step "a passing step" has status "passed"                                    │ 2ms      │ features/never-skip.feature:22                        │
+│   the step "a particular step" has status "passed"                                 │ 1ms      │ features/parameter_types.feature:45                   │
+│   the step "a particular step" has status "passed"                                 │ 1ms      │ features/parameter_types.feature:59                   │
+│   the step "a particular step" has status "passed"                                 │ 1ms      │ features/parameter_types.feature:110                  │
+│   the step "a passing step" has status "skipped"                                   │ 1ms      │ features/fail_fast.feature:23                         │
+│   18 more                                                                          │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the step "([^"]*)" failed with:$/                                                │ 0.46ms   │ features/step_definitions/json_output_steps.js:45     │
+│   the step "I pass an error to the callback" failed with:                          │ 1ms      │ features/handling_step_errors.feature:23              │
+│   the step "a failing step" failed with:                                           │ 1ms      │ features/failing_steps.feature:34                     │
+│   the step "a failing step" failed with:                                           │ 1ms      │ features/failing_steps.feature:50                     │
+│   the step "a failing step" failed with:                                           │ 1ms      │ features/failing_steps.feature:69                     │
+│   the step "a failing step" failed with:                                           │ 1ms      │ features/failing_steps.feature:128                    │
+│   8 more                                                                           │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^it runs the scenario "([^"]*)"$/                                                 │ 0.43ms   │ features/step_definitions/json_output_steps.js:17     │
+│   it runs the scenario "2"                                                         │ 1ms      │ features/rerun_formatter_subfolder.feature:33         │
+│   it runs the scenario "first scenario"                                            │ 1ms      │ features/target_specific_scenarios_by_tag.feature:39  │
+│   it runs the scenario "second scenario - X"                                       │ 1ms      │ features/target_specific_scenarios_by_line.feature:38 │
+│   it runs the scenario "C - passing"                                               │ 0ms      │ features/rerun_formatter.feature:96                   │
+│   it runs the scenario "first scenario"                                            │ 0ms      │ features/target_specific_scenarios_by_line.feature:25 │
+│   2 more                                                                           │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^it fails$/                                                                       │ 0.34ms   │ features/step_definitions/cli_steps.js:30             │
+│   it fails                                                                         │ 1ms      │ features/before_after_all_hook_interfaces.feature:49  │
+│   it fails                                                                         │ 1ms      │ features/before_after_all_hook_interfaces.feature:85  │
+│   it fails                                                                         │ 1ms      │ features/before_after_all_hook_interfaces.feature:109 │
+│   it fails                                                                         │ 1ms      │ features/before_after_all_hook_interfaces.feature:131 │
+│   it fails                                                                         │ 1ms      │ features/before_after_all_hook_interfaces.feature:131 │
+│   116 more                                                                         │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^it runs (\d+) scenarios$/                                                        │ 0.2ms    │ features/step_definitions/json_output_steps.js:13     │
+│   it runs 2 scenarios                                                              │ 1ms      │ features/scenario_outlines.feature:17                 │
+│   it runs 2 scenarios                                                              │ 0ms      │ features/scenario_outlines.feature:42                 │
+│   it runs 2 scenarios                                                              │ 0ms      │ features/scenario_outlines.feature:67                 │
+│   it runs 2 scenarios                                                              │ 0ms      │ features/scenario_outlines.feature:87                 │
+│   it runs 4 scenarios                                                              │ 0ms      │ features/scenario_outlines.feature:113                │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^it passes$/                                                                      │ 0.16ms   │ features/step_definitions/cli_steps.js:28             │
+│   it passes                                                                        │ 1ms      │ features/before_after_all_hook_timeouts.feature:52    │
+│   it passes                                                                        │ 1ms      │ features/before_after_all_hooks.feature:46            │
+│   it passes                                                                        │ 1ms      │ features/data_tables.feature:54                       │
+│   it passes                                                                        │ 1ms      │ features/data_tables.feature:107                      │
+│   it passes                                                                        │ 1ms      │ features/hooks.feature:96                             │
+│   40 more                                                                          │          │                                                       │
+├────────────────────────────────────────────────────────────────────────────────────┼──────────┼───────────────────────────────────────────────────────┤
+│ /^the (first|second) scenario has the step "([^"]*)" with the doc string$/         │ 0ms      │ features/step_definitions/json_output_steps.js:116    │
+│   the first scenario has the step "a doc string step" with the doc string          │ 0ms      │ features/scenario_outlines.feature:43                 │
+│   the second scenario has the step "a doc string step" with the doc string         │ 0ms      │ features/scenario_outlines.feature:47                 │
+└────────────────────────────────────────────────────────────────────────────────────┴──────────┴───────────────────────────────────────────────────────┘
